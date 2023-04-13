@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="23147942"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-13 02:29:54 "/>
+        <attribute name="created" value="MjMxNDc5NDI7RVNONTEyTjEyNjI4MjI7MjAyMy0wNC0wNjsiMDQ6MDk6MTQgIjsyNDI1"/>
+        <attribute name="edited" value="MjMxNDc5NDI7RVNONTEyTjEyNjI4MjI7MjAyMy0wNC0xMzsiMDI6Mjk6NTQgIjsyOzI1MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="user" type="String" array="False" size=""/>
+            <declare name="password" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <output expression="&quot;Digite o seu nome de usu&#225;rio!&quot;" newline="True"/>
+                <input variable="user"/>
+                <output expression="&quot;Digite sua senha!&quot;" newline="True"/>
+                <input variable="password"/>
+                <if expression="user==&quot;joao&quot;">
+                    <then>
+                        <if expression="password==&quot;1234&quot;">
+                            <then>
+                                <output expression="&quot;voc&#234; ser&#225; redirecionado ao seu perfil.&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;usu&#225;rio ou senha inv&#225;lido.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
